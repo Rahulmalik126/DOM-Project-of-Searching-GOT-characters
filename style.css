@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('./gravity/Gravity-Book.otf') format('opentype'),
+}
+body{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.header{
+    display:flex;
+    flex-direction:column;
+    height:10rem;
+    width:98%;
+     justify-content: center;
+    align-items: center;
+    margin:1%;
+    background:linear-gradient(
+        to right,
+     #7da4ff 0%,
+    #6c90ff 25%,
+    #906cff 50%,
+    #9951eb 75% 
+    );
+}
+.head{
+    display: flex;
+}
+.head>h2{
+    font-size:2rem;
+    font-family:'MyCustomFont';
+    color:white;
+}
+.head>img{
+    height:2.2rem;
+    margin-bottom:0.5rem;
+}
+.inputclass{
+ width:16rem;
+    margin:1rem 0;
+    height:1.5rem;
+    border:none;
+    border-radius:0.4rem;
+    font-size:0.7rem;
+    padding:0.1rem 0.5rem;
+    outline-color:#6464b5;
+}
+.nameTab{
+    display: flex;
+    width:85%;
+    gap: 0.8rem;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+}
+.cardsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    width: 90%;
+    margin: 2rem;
+}
+
+.cardFlex{
+    display: flex;
+    gap:1rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:90%;
+    height:13rem;
+    background-color: #B4D8FF;
+    border-radius: 0.4rem;
+    border: 0.1rem 0.5 #B4D8FF;
+    
+}
+.dp{
+    width:3rem;
+    height:3rem;
+    border-radius:5rem;
+    margin-top: 1rem;
+}
+.desc{
+    font-family: "MyCustomFont";
+    font-size: 0.7rem;
+    color: black;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+.name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: black;
+    font-weight:bolder;
+    margin-top: 1rem;
+}
+.knowMore{
+    margin:1rem 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
+    text-decoration: none;
+
+}
+.tab{
+    background-color: black;
+    font-family: "MyCustomFont";
+    font-size: 0.6rem;
+    font-weight:700;
+    border:0.1rem solid black;
+    border-radius:0.3rem;
+    padding: 0.3rem 0.6rem;
+    color: white;
+    cursor: pointer;
+}
+.tab:hover{
+    background-color: white;
+    color: black;
+}
+@media screen and (min-width:490px)  {
+    .card{
+        height:18rem;
+        width: 45%;
+    }    
+}
+
+@media screen and (min-width:1000px)  {
+    .card{
+        height:13rem;
+        width:32%
+    }  
+    .cardFlex{
+        width: 62rem;
+    }  
+}
